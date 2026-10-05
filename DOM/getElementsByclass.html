@@ -1,0 +1,16 @@
+<!--it finds elements using their class attribute-->
+<p class = "highlight">JavaScript DOM</p>
+<p class = "highlight">JavaScript</p>
+<p>this is a paragraph.</p>
+
+<button onclick = "highlightParagraphs()">
+    highlight Paragraphs
+</button>
+<script>
+    function highlightParagraphs() {
+        var paragraphs = document.getElementsByClassName("highlight");
+        for (var i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].style.backgroundColor = "yellow";
+        }
+    }
+</script>

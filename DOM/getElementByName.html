@@ -1,0 +1,13 @@
+<!--it finds elements using their name attribute-->
+<input name=" device" type="checkbox" value="laptop"> Laptop<br>
+<input name=" device" type="checkbox" value="desktop"> Desktop<br>
+<input name=" furniture" type="checkbox" value="sofa"> Sofa<br>
+
+<script>
+    const collection = document.getElementsByName("device");
+    for(let i = 0; i < collection.length; i++) {
+        if(collection[i].type == "checkbox") {
+            collection[i].checked = true;
+        };
+    }
+</script>

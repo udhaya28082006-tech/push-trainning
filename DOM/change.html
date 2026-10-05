@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML and DOM Practice</title>
+</head>
+
+<body>
+
+    <h1 id="title">Hello Udhaya</h1>
+
+    <p id="message">
+        I am learning HTML and JavaScript DOM.
+    </p>
+
+    <input id="name" type="text" placeholder="Enter your name">
+
+    <br><br>
+
+    <button id="btn">Change Text</button>
+
+    <script>
+
+        let title = document.getElementById("title");
+        let message = document.getElementById("message");
+        let name = document.getElementById("name");
+        let button = document.getElementById("btn");
+
+        button.addEventListener("click", function() {
+
+            title.textContent = "Hello " + name.value;
+
+            message.textContent = "You just used the DOM!";
+
+        });
+
+    </script>
+
+</body>
+
+</html>

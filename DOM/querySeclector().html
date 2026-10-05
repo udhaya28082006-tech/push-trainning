@@ -1,0 +1,17 @@
+<!--it returns the first element that matches a CSS selector-->
+<p id="myParagraph">
+    Click the button to change this text.
+</p>
+
+<button id="myButton">
+    Click Me
+</button>
+<script>
+const button = document.querySelector('#myButton');
+
+button.addEventListener('click', () => {
+    const paragraph = document.querySelector('#myParagraph');
+
+    paragraph.textContent = 'The text has been changed!';
+});
+</script>
